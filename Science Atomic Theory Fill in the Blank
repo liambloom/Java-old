@@ -1,0 +1,32 @@
+import java.util.*;
+
+class Dcoder
+{   
+    public static void main(String args[])
+    {   
+        String[] fact = {"Atoms ", "can’t ", "be ", "broken ", "into ", "smaller ", "pieces", "In ", "any ", "element, ", "all ", "the ", "atoms ", "are ", "exactly ", "alike", "Atoms ", "of ", "two ", "or ", "more ", "elements ", "can ", "combine ", "to ", "form ", "compounds", "Atoms ", "of ", "each ", "element ", "have ", "unique ", "mass", "The ", "masses ", "of ", "the ", "elements ", "in ", "a ", "compound ", "are ", "always ", "in ", "a ", "constant ", "ratio"};
+        Double random = Math.floor(Math.random() * fact.length);
+        int randomer = random.intValue();
+        int count = 0;
+        int answercount = 0;
+        while (count < fact.length){
+            if (count == randomer) {
+                if (count == 6 || count == 15 || count == 26 || count == 33 || count==47){
+                    System.out.println("__________");
+                } else {
+                    System.out.print("__________ ");
+                }
+            }else if (count == 6 || count == 15 || count == 26 || count == 33 || count==47){
+                System.out.println(fact[count]);
+            } else {
+                System.out.print(fact[count]);
+            }
+            count++;
+        }
+        while (answercount < 50) {
+            System.out.println("\n");
+            answercount++;
+        }        
+        System.out.print(fact[randomer]);
+    }
+}
