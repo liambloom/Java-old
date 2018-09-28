@@ -11,16 +11,13 @@ class Dcoder
         int answercount = 0;
         while (count < fact.length){
             if (count == randomer) {
-                if (count == 6 || count == 15 || count == 26 || count == 33 || count==47){
-                    System.out.println("__________");
-                } else {
                     System.out.print("__________ ");
-                }
-            }else if (count == 6 || count == 15 || count == 26 || count == 33 || count==47){
-                System.out.println(fact[count]);
             } else {
                 System.out.print(fact[count]);
             }
+            if (count == 6 || count == 15 || count == 26 || count == 33 || count==47){
+                System.out.print("\n");
+            }    
             count++;
         }
         while (answercount < 50) {
@@ -30,3 +27,4 @@ class Dcoder
         System.out.print(fact[randomer]);
     }
 }
+
