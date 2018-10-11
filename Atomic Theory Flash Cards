@@ -17,7 +17,7 @@ class Dcoder
                 System.out.println("\n");
             }
             System.out.print(symbol[randomer]);
-        } else if (randomer2 == 1) {
+        } else {
             System.out.print(symbol[randomer]);
             for (int i = 1; i < 20; i++) {
                 System.out.println("\n");
