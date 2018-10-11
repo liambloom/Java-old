@@ -5,21 +5,26 @@ class Dcoder
     public static void main(String args[])
     {   
         String[] element = {"Scandium", "Titanium", "Vandium", "Iron", "Nickel", "Cobalt", "Copper", "Zink", "Arsenic", "Maganese", "Bromine", "Krypton", "Silver", "Tin", "Iodine", "Barium", "Selenium", "Gold", "Tungsten", "Bismust", "Mercury", "Lead", "Radon", "Gallium", "Germanium", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Chromium"};
-        String[] symbol = {"Sc", "Ti", "V", "Fe", "Ni", "Co", "Cu", "Zn", "As", "Mn", "Br", "Kr", "Ag", "Sn", "I", "Bu", "Se", "Au", "W", "Bi", "Hg", "Pb", "Rn", "Ga", "Ge", "Rb", "St", "Y", "Zr", "Cr"};
-        Double random = Math.floor(Math.random() * element.length);
+        String[] symbol = {"Sc", "Ti", "V", "Fe", "Ni", "Co", "Cu", "Zn", "As", "Mn", "Br", "Kr", "Ag", "Sn", "I", "Ba", "Se", "Au", "W", "Bi", "Hg", "Pb", "Rn", "Ga", "Ge", "Rb", "St", "Y", "Zr", "Cr"};
+        Double random = Math.floor(Math.random() * (element.length + 1));
         int randomer = random.intValue();
         Double random2 = Math.floor(Math.random() * 2);
-        int randomer2 = random.intValue();
-        int counter = 1
+        int randomer2 = random2.intValue();
+        int counter = 1;
         if (randomer2 == 0) {
-            System.out.print(element[random]);
+            System.out.print(element[randomer]);
             while (counter < 20) {
                 System.out.println("\n");
-                counter++
+                counter++;
             }
-            System.out.print(symbol[random])
-        } else {
-            System.out.print(symbol[random]);
+            System.out.print(symbol[randomer]);
+        } else if (randomer2 == 1) {
+            System.out.print(symbol[randomer]);
+            while (counter < 20) {
+                System.out.println("\n");
+                counter++;
+            }
+            System.out.print(element[randomer]);
         }
     }
 }
