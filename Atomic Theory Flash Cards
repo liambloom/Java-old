@@ -4,7 +4,7 @@ class Dcoder
 {   
     public static void main(String args[])
     {   
-        String[] element = {"Scandium", "Titanium", "Vandium", "Iron", "Nickel", "Cobalt", "Copper", "Zink", "Arsenic", "Maganese", "Bromine", "Krypton", "Silver", "Tin", "Iodine", "Barium", "Selenium", "Gold", "Tungsten", "Bismust", "Mercury", "Lead", "Radon", "Gallium", "Germanium", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Chromium"};
+        String[] element = {"Scandium", "Titanium", "Vandium", "Iron", "Nickel", "Cobalt", "Copper", "Zinc", "Arsenic", "Maganese", "Bromine", "Krypton", "Silver", "Tin", "Iodine", "Barium", "Selenium", "Gold", "Tungsten", "Bismust", "Mercury", "Lead", "Radon", "Gallium", "Germanium", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Chromium"};
         String[] symbol = {"Sc", "Ti", "V", "Fe", "Ni", "Co", "Cu", "Zn", "As", "Mn", "Br", "Kr", "Ag", "Sn", "I", "Ba", "Se", "Au", "W", "Bi", "Hg", "Pb", "Rn", "Ga", "Ge", "Rb", "St", "Y", "Zr", "Cr"};
         Double random = Math.floor(Math.random() * (element.length + 1));
         int randomer = random.intValue();
